@@ -1,0 +1,110 @@
+.epgf-scorecard-page-title {
+    margin-left: 340px;
+  }
+  
+  .epgf-scorecard-subject-details {
+    margin-left: 340px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-family: 'Poppins';
+  }
+  
+  .subject-name-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+  }
+  
+  .back-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .back-icon {
+    filter: brightness(0) saturate(100%);
+  }
+
+  
+  .epgf-scorecard-subject-name{
+    margin-top: 5px;
+    font-size: 28px;
+    color: black;
+    font-weight: 800;
+  }
+  .epgf-scorecard-subject-code {
+    margin-top: 5px;
+    color: black;
+    font-size: 24px;
+  }
+
+
+  /*Task Input*/
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 340px;
+  }
+  
+  .input-task-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .task-label {
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #383838;
+    font-family: 'Poppins';
+  }
+  
+  .custom-input {
+    width: 300px;
+    height: 30px;
+    padding: 18px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /*Search Input*/
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 320px;
+    height: 30px;
+    font-size: 16px;
+    padding: 18px;
+    border: 1px solid #0089F6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    }
+  
+  /* placeholder */
+  .custom-input::placeholder,
+  .search-input::placeholder {
+    font-size: 15px;
+    color: #7B7878;
+  }
+
+  .page-container {
+    display: flex;        /* Use Flexbox for the page layout */
+    justify-content: space-between;  /* Create space between the container and border-box */
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;  /* Vertically align the items in the container */
+    gap: 20px;            /* Space between elements inside the container */
+  }

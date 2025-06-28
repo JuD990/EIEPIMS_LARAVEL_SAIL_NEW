@@ -1,0 +1,43 @@
+/* Certification Title */
+.certification-title {
+  font-family: "Epilogue";
+  font-weight: 800;
+  margin-left: 340px;
+  color: #383838;
+}
+
+/* Tabs Container */
+.tabs-container {
+  position: relative;
+  display: flex;
+  width: calc(100% - 340px);
+  left: 340px;
+}
+
+.tabs-container p{
+  font-size: 20px;
+}
+
+/* Individual Tab */
+.tab {
+  padding: 40px 30px;
+  cursor: pointer;
+}
+
+/* Active Tab */
+.active-tab {
+  border-bottom: 8px solid #383838;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Divider Line */
+.divider-line {
+  height: 2px;
+  background-color: #7B7878;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  width: 1450px;
+  margin-left: 365px;
+  margin-right: auto;
+}

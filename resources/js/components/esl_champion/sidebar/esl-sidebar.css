@@ -1,0 +1,344 @@
+.esl-dashboard-sidebar {
+  background-color: #f3f3f3;
+  width: 320px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-right: 3px solid #e0e0e0;
+  position: fixed;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto; /* Enables scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #c4c4c4 #f3f3f3; /* Custom scrollbar colors */
+}
+
+.unc-branding {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+  justify-content: center;
+  margin-top: auto; /* Pushes it to the bottom */
+  padding: 15px 15px;
+}
+
+.unc-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 5px; /* Space between logo and text */
+}
+
+.unc-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #857878;
+  text-align: center; /* Center the text */
+}
+
+/* Logo and Title section */
+.esl-dashboard-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 35px;
+}
+
+.eie-text {
+  color: #FF474A; /* Red color for "EIE" */
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.eie-text {
+  color: #FF474A; /* Red color for "EIE" */
+}
+
+.sub-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B7280; /* Adjust color to fit design */
+  text-transform: uppercase;
+  margin-top: -5px; /* Adjust spacing */
+}
+
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.title {
+  color: #383838;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Sidebar Buttons */
+.esl-prime-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+/* 🔹 Main Sidebar Buttons */
+.esl-prime-pages > button.active {
+  background-color: #DC2626; /* Red */
+  color: white;
+  border-radius: 20px;
+}
+
+.esl-prime-pages > button.active p {
+  color: white;
+}
+
+.esl-prime-pages > button.active img {
+  filter: brightness(0) invert(1);
+}
+
+/* 🔸 Sub-buttons Inside Sections */
+.extra-buttons-container button.active {
+  background-color: #ffadad; /* Light Pink */
+  color: black;
+  border-radius: 20px;
+}
+
+.extra-buttons-container button.active p {
+  color: black;
+}
+
+.extra-buttons-container button.active img {
+  filter: brightness(0); /* Turns the image black */
+}
+
+.esl-eie-management-sidebar-button,
+.esl-eie-diagnostic-sidebar-button,
+.esl-eie-reporting-sidebar-button,
+.esl-dashboard-sidebar-button {
+  height: 80px;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+.esl-eie-management-sidebar-button:hover,
+.esl-eie-diagnostic-sidebar-button:hover,
+.esl-eie-reporting-sidebar-button:hover,
+.esl-dashboard-sidebar-button:hover {
+  background-color: #DC2626;
+  border-radius: 20px;
+}
+.esl-eie-management-sidebar-button:hover p,
+.esl-eie-diagnostic-sidebar-button:hover p,
+.esl-eie-reporting-sidebar-button:hover p,
+.esl-dashboard-sidebar-button:hover p{
+  color: white;
+}
+.esl-eie-management-sidebar-button:hover img,
+.esl-eie-diagnostic-sidebar-button:hover img,
+.esl-eie-reporting-sidebar-button:hover img,
+.esl-dashboard-sidebar-button:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.esl-eie-management-sidebar-button img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.esl-eie-diagnostic-sidebar-button img {
+  width: 50px; /* Adjust icon size */
+  height: 50px; /* Keep icons square */
+  margin-right: 15px; /* Space between icon and title */
+  margin-left: 8px;
+}
+.esl-eie-reporting-sidebar-button img{
+  width: 40px; /* Adjust icon size */
+  height: 40px; /* Keep icons square */
+  margin-right: 15px; /* Space between icon and title */
+  margin-left: 17px;
+}
+.esl-dashboard-sidebar-button img{
+  width: 50px; /* Adjust icon size */
+  height: 70px; /* Keep icons square */
+  margin-right: 15px; /* Space between icon and title */
+  margin-left: 10px;
+}
+.esl-eie-management-sidebar-button p,
+.esl-eie-diagnostic-sidebar-button p,
+.esl-eie-reporting-sidebar-button p,
+.esl-dashboard-sidebar-button p{
+  margin: 0; /* Remove default margin from <p> */
+  font-size: 20px; /* Adjust font size */
+  font-weight: 500; /* Adjust font weight */
+  color: black; /* Set text color */
+  font-family: 'Poppins';
+}
+.extra-buttons-container {
+  margin-top: 10px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column; /* Stacks buttons vertically */
+}
+.esl-assign-poc-sidebar-button,
+.diagnosticReports-button,
+.interview-button,
+.epgf-rubric-button,
+.monthly-champions-button,
+.esl-imp-subjects-button,
+.certification-button,
+
+.accounts-button {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.esl-assign-poc-sidebar-button:hover,
+.diagnosticReports-button:hover,
+.interview-button:hover,
+.epgf-rubric-button:hover,
+.esl-imp-subjects-button:hover,
+.monthly-champions-button:hover,
+.certification-button:hover,
+.accounts-button:hover {
+  background-color: #FFE6E2; /* Highlight color on hover */
+  border-radius: 20px; /* Rounded corners */
+}
+
+.esl-assign-poc-sidebar-button:hover p,
+.diagnosticReports-button:hover p,
+.interview-button:hover p,
+.epgf-rubric-button:hover p,
+.monthly-champions-button:hover p,
+.certification-button:hover p,
+.esl-imp-subjects-button:hover p
+.accounts-button:hover p{
+  color: black;
+}
+.monthly-champions-button img{
+  margin-left: 32px;
+  width: 60px;
+  height: 60px;
+}
+
+.epgf-rubric-button img{
+  margin-left: 40px;
+  width: 50px;
+  height: 50px;
+}
+.certification-button img{
+  margin-left: 35px;
+}
+.accounts-button img{
+  margin-left: 35px;
+  margin-top: -10px;
+}
+
+.diagnosticReports-button img{
+  margin-left: 42px;
+  width: 60px;
+  height: 60px;
+}
+.interview-button img{
+  margin-left: 48px;
+  width: 50px;
+  height: 60px;
+}
+
+.esl-imp-subjects-button img{
+  margin-left: 40px;
+  width: 70px;
+  height: 70px;
+}
+.esl-assign-poc-sidebar-button img{
+  margin-left: 35px;
+  width: 70px;
+  height: 90px;
+}
+
+.esl-assign-poc-sidebar-button p,
+.diagnosticReports-button p,
+.interview-button p,
+.epgf-rubric-button p,
+.monthly-champions-button p,
+.esl-imp-subjects-button p,
+.certification-button p,
+.accounts-button p{
+  text-align: left;
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+.diagnosticReports-button p{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.interview-button p{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.epgf-rubric-button p{
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.monthly-champions-button p{
+  padding-top: 10px;
+  margin-left: 28px;
+}
+.certification-button p{
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.accounts-button p{
+  margin-right: 40px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.esl-imp-subjects-button p{
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.esl-assign-poc-sidebar-button p{
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+.student-dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-left: 350px;
+}
+
+.dropdowns-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex: 1;
+  margin-top: 12px;
+}
+
+.student-dropdown-wrapper,
+.esl-monthly-champ-dropdown-wrapper {
+  min-width: 200px;
+  position: relative;
+}
+
+.student-dropdown-btn,
+.esl-monthly-champ-dropdown-btn {
+  width: 100%;
+  height: 50px;
+  padding: 10px 16px;
+  border: 1px solid black;
+  background-color: #FBF7F7;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.student-dropdown-menu,
+.esl-monthly-champ-dropdown-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+.student-dropdown-item,
+.esl-monthly-champ-dropdown-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.student-dropdown-item:hover,
+.esl-monthly-champ-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.student-dropdown-item.selected,
+.esl-monthly-champ-dropdown-item.esl-monthly-champ-selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.global-search-bar {
+  width: 476px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: 25px;
+}

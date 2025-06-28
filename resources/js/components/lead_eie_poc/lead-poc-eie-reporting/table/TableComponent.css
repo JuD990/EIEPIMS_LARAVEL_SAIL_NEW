@@ -1,0 +1,67 @@
+/* TableComponent.css */
+.eie-reporting-esl-table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 600px;
+    margin-left: 340px;
+    margin-right: 35px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-family: 'Poppins';
+    white-space: nowrap;
+}
+
+.eie-reporting-esl-table-header-colored {
+    background-color: #F4F7FC;
+    border: 1px solid #ddd;
+    z-index: 2; /* Make sure it stays above the plain header */
+    height: 40px;
+}
+
+.eie-reporting-esl-table-header-plain {
+    background-color: white;
+    position: sticky;
+    top: 0; /* Keep it at the top of the viewport */
+    z-index: 1; /* Make sure it is below the colored header */
+    border-top: 2px solid #F4F7FC; /* Border to separate the two rows */
+    height: 40px;
+    border: 1px solid #ddd;
+}
+
+.eie-reporting-esl-table-header-cell {
+    padding: 8px 15px;
+    text-align: left;
+    background-color: #F4F7FC;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Keep it above the plain header */
+    position: sticky;
+    top: 0;
+    height: 40px;
+    border: 2px solid #ddd;
+}
+
+.eie-reporting-esl-table-poc-table {
+    width: 100%;
+    border-spacing: 0; /* Ensure cells are spaced */
+    border: 1px solid #ddd; /* Global table border */
+}
+
+.eie-reporting-esl-table-header-colored,
+.eie-reporting-esl-table-header-plain,
+.eie-reporting-esl-table-header-cell,
+.eie-reporting-esl-table-body-cell,
+.eie-reporting-esl-table-header-header-cell {
+    border-left: 1px solid #ddd; /* Add left vertical borders */
+    border-right: 1px solid #ddd; /* Add right vertical borders */
+    text-align: center;
+
+}
+
+/* Optional: Add specific styling for the body rows */
+.eie-reporting-esl-table-body-cell td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    border-width: 1px;
+}

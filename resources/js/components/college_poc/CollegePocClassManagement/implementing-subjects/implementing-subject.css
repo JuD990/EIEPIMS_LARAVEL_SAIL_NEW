@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Parent container for subjects */
+.example-subjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 2000px;
+    gap: 40px;
+    margin-left: 150px;
+    box-sizing: border-box;
+}
+
+/* Combined card styling */
+.combined-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 950px;
+    box-sizing: border-box;
+}
+
+/* Interior card (colored part) */
+.combined-card .interior-card {
+    background-color: var(--course-color, #FFA047);
+    border-radius: 15px 0 0 15px;
+    width: 60px;
+    min-height: 200px;
+    flex-shrink: 0;
+}
+
+/* Content area inside the white card */
+.implementing-subject-1 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    color: #383838;
+}
+
+/* Subject info container */
+.subject-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+/* Course title styling */
+.course-title {
+    font-family: "Epilogue", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #383838;
+    margin: 0;
+    min-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+}
+
+/* Course code styling */
+.course-code {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #8E8E8E;
+    margin: 0 10px;
+    white-space: nowrap;
+    font-weight: 400px;
+}
+
+/* Student number container */
+.student-number {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    color: #8E8E8E;
+    min-width: 90px;
+}
+
+.student-number p {
+    margin-top: 13px;
+}
+
+/* Student number icon */
+.student-number img {
+    width: 40px;
+    height: auto;
+}
+
+/* Class performance section */
+.class-performance {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.eie-averages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pgf-average,
+.completion-rate,
+.proficiency-level {
+    flex: 1;
+    text-align: center;
+}
+
+.pgf-average p:first-child,
+.completion-rate p:first-child,
+.proficiency-level p:first-child {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    color: #383838;
+}
+
+.pgf-average p:last-child,
+.completion-rate p:last-child,
+.proficiency-level p:last-child {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 4px 0 0;
+    color: #8E8E8E;
+}
+
+/* Scrollable row for months */
+.scroll-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 15px 0;
+    width: 950px;
+    box-sizing: border-box;
+}
+
+/* Month box styling */
+.month-box {
+    min-width: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    color: #383838;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+/* Hover effect using the same color */
+.month-box:hover {
+    box-shadow: 0 4px 12px var(--course-color, rgba(255, 160, 71, 0.6));
+    transition: box-shadow 0.3s ease;
+}
+
+/* Month title */
+.month-box h2 {
+    color: var(--course-color);
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stat-box {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-box p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #383838;
+}
+
+.stat-box strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+/* No classes available message */
+.no-class-available {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #8E8E8E;
+    margin-left: 0;
+    width: 100%;
+    max-width: 950px;
+}
+
+.subject-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* adjust spacing between items */
+}
+
+.code-row {
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+    margin-left: 45px;
+}

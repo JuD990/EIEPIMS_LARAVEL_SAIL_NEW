@@ -1,0 +1,72 @@
+.dropdown-yearlevel-semester {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.dropdown-semester {
+  position: relative;
+}
+
+.dropbtn {
+  padding: 12px 16px;
+  background-color: #fbf7f7;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  height: 50px;
+}
+
+.dropdown-label {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.dropdown-icon {
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-content-semester {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px; /* make sure it sits just below the button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.dropdown-content-semester p {
+  margin: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content-semester p:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-option.selected {
+  font-weight: bold;
+  background-color: #eaeaea;
+}

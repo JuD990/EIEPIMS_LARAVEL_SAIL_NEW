@@ -1,0 +1,160 @@
+/* Sidebar container */
+.college-poc-dashboard-sidebar {
+  background-color: #f3f3f3;
+  width: 320px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-right: 3px solid #e0e0e0;
+  position: fixed;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto; /* Enables scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #c4c4c4 #f3f3f3; /* Custom scrollbar colors */
+}
+
+/* 🔹 Main Sidebar Buttons */
+.college-poc-pages > button.active {
+  background-color: #DC2626; /* Red */
+  color: white;
+  border-radius: 20px;
+}
+
+.college-poc-pages > button.active p {
+  color: white;
+}
+
+.college-poc-pages > button.active img {
+  filter: brightness(0) invert(1);
+}
+
+
+/* Logo and Title section */
+.college-poc-dashboard-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.title {
+  color: #383838;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Sidebar Buttons */
+.college-poc-pages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.college-poc-student-management-sidebar-button, 
+.college-poc-eie-reporting-sidebar-button, 
+.college-poc-class-management-sidebar-button, 
+.college-poc-dashboard-sidebar-button{
+  height: 80px;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.college-poc-student-management-sidebar-button:hover,
+.college-poc-eie-reporting-sidebar-button:hover,
+.college-poc-class-management-sidebar-button:hover,
+.college-poc-dashboard-sidebar-button:hover{
+  background-color: #DC2626;
+  border-radius: 20px;
+}
+.college-poc-student-management-sidebar-button:hover p,
+.college-poc-eie-reporting-sidebar-button:hover p,
+.college-poc-class-management-sidebar-button:hover p,
+.college-poc-dashboard-sidebar-button:hover p{
+  color: white;
+}
+
+.college-poc-student-management-sidebar-button:hover img,
+.college-poc-eie-reporting-sidebar-button:hover img,
+.college-poc-class-management-sidebar-button:hover img,
+.college-poc-dashboard-sidebar-button:hover img{
+  filter: brightness(0) invert(1);
+}
+
+.college-poc-student-management-sidebar-button img {
+  width: 60px;
+  height: 90px;
+  margin-right: 15px;
+  margin-left: 20px;
+} 
+.college-poc-eie-reporting-sidebar-button img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 25px;
+}
+.college-poc-class-management-sidebar-button img{
+  width: 50px;
+  height: 80px;
+  margin-right: 18px;
+  margin-left: 20px;
+}
+.college-poc-dashboard-sidebar-button img{
+  width: 50px;
+  height: 70px;
+  margin-right: 18px;
+  margin-left: 20px;
+}
+.college-poc-student-management-sidebar-button p, 
+.college-poc-eie-reporting-sidebar-button p, 
+.college-poc-class-management-sidebar-button p, 
+.college-poc-dashboard-sidebar-button p{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  font-family: 'Poppins';
+}
+
+.unc-branding {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+  justify-content: center;
+  margin-top: auto; /* Pushes it to the bottom */
+  padding: 15px 15px;
+}
+
+.unc-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 5px; /* Space between logo and text */
+}
+
+.unc-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #857878;
+  text-align: center; /* Center the text */
+}

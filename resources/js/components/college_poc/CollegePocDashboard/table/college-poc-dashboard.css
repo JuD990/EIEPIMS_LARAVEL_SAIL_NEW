@@ -1,0 +1,91 @@
+.dashboard-college-poc-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 700px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-family: 'Poppins';
+    white-space: nowrap;
+}
+
+.dashboard-college-poc-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.unique-bordered-table th,
+.unique-bordered-table td {
+    border: 1px solid #ddd; /* Inner borders */
+    padding: 8px;
+    text-align: center;
+}
+
+.dashboard-college-poc-table th {
+    background-color: #F4F7FC;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.dashboard-college-poc-table thead tr:first-child th {
+    top: 0;
+}
+
+.dashboard-college-poc-table thead tr:nth-child(2) th {
+    top: 40px;
+}
+
+.year-total-row {
+    background-color: #D9D9D9 !important;
+    font-weight: bold;
+}
+
+.grand-total-row {
+    background-color: #FFD298 !important;
+    font-weight: bold;
+}
+
+/* Additional Styling */
+.no-data-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.loading-container {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 1px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Align Course Title column to the left */
+.dashboard-college-poc-table th:nth-child(5), /* Header for Course Title */
+.dashboard-college-poc-table td:nth-child(5) { /* Data for Course Title */
+    text-align: left;
+}
